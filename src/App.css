@@ -1,38 +1,236 @@
-.App {
+.ntheader {
+  height: 111px;
+}
+.branding {
+  padding-top: 10px;
+}
+#nt_menu_id {
+  width: 100%;
+}
+.header {
+  width: 100%!important;
+}
+.my-logo {
+  align-self: center;
+}
+.bi {
+  margin-top: 0.8em;
+}
+.fas, .far {
+  font-size: 25px;
+}
+.mobile-btn {
+  height: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+  align-items: center;
+}
+.col_group_btns {
+  flex-wrap: nowrap!important;
+  justify-content: flex-end;
+  padding-right: 15px!important;
+  padding-left: 15px!important;
+  margin: 0!important;
+}
+.tc {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mobile {
+  width: 100%;
+  height: 55px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 99999;
+  background-color: white;
+  box-shadow: 0 0 9px rgba(0, 0, 0, .12);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+
+.carousel-title-main {
+  font-size: 120%;
+  margin-bottom: 0%;
+  font-weight: bold;
+}
+.carousel-title-second {
+  font-size: 320%;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+.tr {
+  text-align: right!important;
+}
+.tl {
+  text-align: left!important;
+}
+.carousel-btn-main {
+  margin-bottom: 5%;
+  border-radius: 0;
+  margin-top: 1%;
+}
+.mn {
+  margin-bottom: 0;
+}
+.carousel-caption {
+  line-height: 1;
+}
+
+
+
+
+
+
+
+.cat-section {
+  margin-top: 30px!important;
+}
+.categories {
+  padding: 0!important;
+  margin: 0!important;
+}
+.categories-holder {
+  max-width: 1200px!important;
+}
+.my-pic {
+  max-width: 100%;
+}
+.bg-img-cat {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  min-height: 100%;
+}
+.bg-img-cat-big {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 630px;
+}
+.bg-img-cat-min {
+  max-height: 300px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.mh__50 {
+  max-width: 100%;
+  max-height: 300px;
+}
+.mh__50_1 {
+  max-width: 100%;
+  max-height: 300px;
+}
+.mh__100 {
+  max-width: 100%;
+}
+.mb__30 {
+  margin-bottom: 30px!important;
+}
+.p__15 {
+  padding: 0px 15px 0px 15px;
+}
+.categories-btn {
+  position: relative;
+  bottom: 10%;
+  right: 30%;
+  left: 30%;
+  width: 40%;
+  text-align: center;
+  font-weight: bold;
+}
+.categories-btn-small {
+  position: relative;
+  bottom: 25%;
+  right: 30%;
+  left: 30%;
+  width: 40%;
+  text-align: center;
+  font-weight: bold;
+}
+.categories-btn-right {
+  position: absolute;
+  bottom: 8%;
+  right: 30%;
+  left: 30%;
+  width: 40%;
+  text-align: center;
+  font-weight: bold;
+}
+.centred-item {
+  max-height: 630px;
+  max-width: 300px;
+  background-image: url('https://cdn.shopify.com/s/files/1/0332/6420/5963/files/p24-21_360x.jpg?v=1581731327');
+  background-size: 170%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.cat-column {
+  max-height: 630px;
+  justify-content: space-between;
+}
+
+@media (max-width: 400px) {
+  .centred-item, .categories-btn-right, .categories-btn-small {
+    font-size: 80%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+
+@media (max-width: 678px) {
+  .col_group_btns {
+    padding-right: 15px!important;
   }
-  to {
-    transform: rotate(360deg);
+  .tc {
+    padding: 0px!important;
+  }
+  .carousel-title-main {
+    font-size: 50%;
+    margin-bottom: 0%;
+    font-weight: bold;
+  }
+  .carousel-title-second {
+    font-size: 100%;
+    font-weight: bold;
+    margin-bottom: 1%;
+  }
+  .carousel-btn-main {
+    margin-bottom: 0%;
+    border-radius: 0;
+    margin-top: 0%;
+    font-size: 10%;
+  }
+  .my-ind {
+    margin: 0!important;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .col_group_btns {
+    padding-right: 0px!important;
+  }
+  .navbar {
+    padding-left: 0px!important;
+  }
+  .mobile-box {
+    margin-top: 7%;
+  }
+  .mobile-btn {
+    padding: 0!important;
+    width: 10%;
+  }
+  .fas, .far {
+    font-size: 15px;
+  }
+  .mobile-title {
+    font-size: 10px;
   }
 }
